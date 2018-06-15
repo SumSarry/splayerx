@@ -4,7 +4,7 @@
     <div class="masking"
       v-show="showMask"></div>
     <div class="video-controller" id="video-controller"
-      @mousedown.self="resetDraggingState"
+      @mousedown.left.self="resetDraggingState"
       @mouseup="togglePlayback"
       @mousewheel="wheelVolumeControll"
       @mousemove="wakeUpAllWidgets"
